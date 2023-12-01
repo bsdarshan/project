@@ -1,0 +1,3 @@
+Open landing.html
+click visit page to login/ register 
+after register login and click login button to redirect to home page

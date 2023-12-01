@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Event Management</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background-image: url('pr.jpg'); /* Replace with the correct path */
+      background-size: cover;
+      background-position: center;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px;
+      position: fixed;
+      width: 100%;
+      background-color: rgba(255, 255, 255, 0); /* Fully transparent background */
+    }
+
+    .logo {
+      margin: 0;
+      color: white;
+      font-size: 30px; /* Adjust the font size as needed */
+      padding-left: 10px; /* Add padding to move it slightly to the right */
+      margin-top: -600px; /* Adjust the margin-top to move it higher */
+    }
+
+    .navigation {
+      margin-top: -600px; /* Adjust the margin-top to move it higher */
+    }
+
+    .navigation a {
+      text-decoration: none;
+      color: white;
+      margin: 0 15px;
+      cursor: pointer;
+    }
+
+    .btnlogin-popup {
+      background-color: #4caf50;
+      color: white;
+      padding: 10px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    form {
+      background-color: transparent; /* Set background color to transparent */
+         backdrop-filter: blur(10px);
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      width: 300px;
+      margin-top: 70px; /* Adjust margin-top to prevent overlap with the fixed header */
+    }
+
+    input {
+      width: 100%;
+      padding: 8px;
+      margin: 8px 0;
+      box-sizing: border-box;
+      cursor: text; /* Add cursor property for input fields */
+    }
+
+    button {
+      background-color: #4caf50;
+      color: white;
+      padding: 10px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      width: 100%;
+    }
+
+    button:hover {
+      background-color: #45a049;
+    }
+
+    .toggle-form {
+      text-align: center;
+      margin-top: 10px;
+    }
+
+    .toggle-form a {
+      text-decoration: none;
+      color: #4caf50;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h2 class="logo">EVENT MANAGEMENT</h2>
+    <nav class="navigation">
+     <!-- Replace "home-page.html" with the actual path of your home page -->
+<a href="index.html">Home</a>
+
+      <a href="about-page.html" target="_blank">About</a>
+     <a href="service-page.html" target="_blank">Service</a>
+     <a href="contact-page.html" target="_blank">Contact</a>
+    </nav>
+  </header>
+
+  <form id="loginForm">
+    <h2>Login</h2>
+    <label for="loginUsername">Username:</label>
+    <input type="text" id="loginUsername" name="loginUsername" required>
+
+    <label for="loginPassword">Password:</label>
+    <input type="password" id="loginPassword" name="loginPassword" required>
+
+    <a href="C:\Users\mirji\OneDrive\Desktop\project home page\index2.html"><button type="button">Login</button></a>
+
+    <div class="toggle-form">
+      <span>Don't have an account? <a href="#" onclick="toggleForm('registerForm')">Register</a></span>
+    </div>
+  </form>
+
+  <form id="registerForm" style="display: none;">
+    <h2>Register</h2>
+    <label for="registerUsername">Username:</label>
+    <input type="text" id="registerUsername" name="registerUsername" required>
+
+    <label for="registerPassword">Password:</label>
+    <input type="password" id="registerPassword" name="registerPassword" required>
+
+    <button type="button" onclick="register()">Register</button>
+
+    <div class="toggle-form">
+      <span>Already have an account? <a href="#" onclick="toggleForm('loginForm')">Login</a></span>
+    </div>
+  </form>
+
+  <script>
+    function handleServiceClick() {
+      alert('Service Clicked!'); // You can replace this with your desired action
+    }
+
+    function toggleForm(formId) {
+      document.getElementById('loginForm').style.display = formId === 'loginForm' ? 'block' : 'none';
+      document.getElementById('registerForm').style.display = formId === 'registerForm' ? 'block' : 'none';
+    }
+
+    // function login() {
+    //   var username = document.getElementById('loginUsername').value;
+    //   var password = document.getElementById('loginPassword').value;
+    //   console.log('Login:', { username, password });
+    // }
+
+    function register() {
+      var username = document.getElementById('registerUsername').value;
+      var password = document.getElementById('registerPassword').value;
+      console.log('Register:', { username, password });
+    }
+  </script>
+
+</body>
+</html>

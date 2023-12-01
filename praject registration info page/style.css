@@ -1,0 +1,588 @@
+.frame {
+  background-color: rgba(255, 255, 255, 1);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+}
+
+.frame .overlap-wrapper {
+  background-color: rgba(255, 255, 255, 1);
+  overflow: hidden;
+  background: linear-gradient(-90deg, rgb(0, 47, 50) 0%, rgb(0, 109.96, 116.01) 100%);
+  width: 1520px;
+  height: 1520px;
+}
+
+.frame .overlap {
+  position: relative;
+  width: 1470px;
+  height: 1523px;
+  left: 24px;
+}
+
+.frame .overlap-group {
+  position: absolute;
+  width: 1411px;
+  height: 1401px;
+  top: 83px;
+  left: 0;
+}
+
+.frame .div {
+  position: absolute;
+  width: 1350px;
+  height: 1346px;
+  top: 25px;
+  left: 34px;
+}
+
+.frame .rectangle {
+  width: 1200px;
+  height: 1200px;
+  top: 75px;
+  left: 75px;
+  background-color: #ffffff;
+  position: absolute;
+  border-radius: 100px;
+}
+
+.frame .rectangle-2 {
+  width: 150px;
+  height: 150px;
+  top: 196px;
+  left: 0;
+  background: linear-gradient(180deg, rgb(0, 47, 50) 0%, rgb(0, 109.96, 116.01) 100%);
+  position: absolute;
+  border-radius: 100px;
+  /* animation: ani 1s ease-in-out infinite; */
+}
+
+
+
+
+
+
+
+input {
+  /* width: 100%; */
+
+  border: 1px solid #ccc;
+  /* border-radius: 4px; */
+  box-sizing: border-box;
+}
+
+/* Style the placeholder text */
+input::placeholder {
+  color: #888;
+  font-size: 14px;
+}
+
+#name {
+  /* Rectangle 57 */
+
+  position: absolute;
+  width: 450px;
+  height: 70px;
+  left: 351px;
+  top: 480px;
+  opacity: 50%;
+  background: #D9D9D9;
+  border-radius: 20px;
+z-index: 1;
+}
+
+#name:hover {
+  opacity: 100%;
+}
+
+.name {
+  position: absolute;
+  width: 414px;
+  height: 50px;
+  left: 378px;
+  top: 490px;
+  font-family: 'Jockey One';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 50px;
+  color: #000000;
+  opacity: 30%;
+z-index: 1;
+}
+
+
+#e-mail {
+  position: absolute;
+  width: 450px;
+  height: 70px;
+  left: 351px;
+  top: 588px;
+  opacity: 50%;
+  background: #D9D9D9;
+  border-radius: 20px;
+  z-index: 1;
+}
+#e-mail:hover {
+  opacity: 100%;
+}
+.e-mail {
+  position: absolute;
+  width: 414px;
+  height: 50px;
+  left: 378px;
+  top: 603px;
+  font-family: 'Jockey One';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 50px;
+  opacity: 30%;
+  color: #000000;
+  z-index: 1;
+}
+
+#ph-no{
+position: absolute;
+width: 450px;
+height: 70px;
+left: 351px;
+top: 696px;
+opacity: 50%;
+background: #D9D9D9;
+border-radius: 20px;
+z-index: 1;
+}
+#ph-no:hover{
+  opacity: 100%;
+}
+
+.ph-no{
+position: absolute;
+width: 414px;
+height: 50px;
+left: 378px;
+top: 706px;
+font-family: 'Jockey One';
+font-style: normal;
+font-weight: 400;
+font-size: 36px;
+line-height: 50px;
+opacity: 30%;
+color: #000000;
+z-index: 1;
+}
+
+
+#requirments{
+position: absolute;
+width: 450px;
+height: 195px;
+left: 351px;
+top: 809px;
+opacity: 50%;
+background: #D9D9D9;
+border-radius: 20px;
+z-index: 1;
+}
+.requirments{
+  /* Requirements... */
+
+position: absolute;
+width: 414px;
+height: 50px;
+left: 369px;
+top: 827px;
+font-family: 'Jockey One';
+font-style: normal;
+font-weight: 400;
+font-size: 36px;
+line-height: 50px;
+opacity: 30%;
+color: #000000;
+z-index: 1;
+}
+
+#requirments:hover{
+opacity: 100%;
+}
+
+
+.inputs{
+  position: absolute;
+  top: -70px;
+  left: -50px;
+
+}
+.any-further{
+/* Any further information, Assistance or Help required please contact */
+
+position: absolute;
+width: 250px;
+height: 56px;
+left: 833px;
+top: 647px;
+font-family: 'Jockey One';
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 28px;
+color: #000000;
+z-index: 1;
+}
+
+.message{
+  position: absolute;
+  top: -150px;
+  left: -50px;
+}
+
+.terms{
+position: absolute;
+width: 260px;
+height: 28px;
+left: 830px;
+top: 800px;
+font-family: 'Jockey One';
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+font-weight: bold;
+line-height: 28px;
+z-index: 1;
+color: #000000;
+}
+
+.submit{
+position: absolute;
+width: 150px;
+height: 60px;
+left: 820px;
+top: 850px;
+background: #D9D9D9;
+box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
+border-radius: 50px;
+z-index: 1;
+opacity: 70%;
+}
+.submit::first-line{
+position: absolute;
+width: 102px;
+height: 56px;
+top: 3px;
+left: 35px;
+font-family: 'Jockey One';
+font-style: normal;
+font-weight: 400;
+font-size: 30px;
+line-height: 56px;
+z-index: 1;
+color: #000000;
+}
+
+.submit:hover{
+  opacity: 100%;
+  cursor: pointer;
+}
+.submit:active{
+  box-shadow: inset 2px 2px 20px 0px rgba(0, 0, 0, 1);
+  cursor: pointer;
+}
+
+button{
+border: none;
+}
+
+
+.frame .rectangle-3 {
+  width: 50px;
+  height: 50px;
+  top: 1168px;
+  left: 199px;
+  background: linear-gradient(180deg, rgb(0, 47, 50) 0%, rgb(0, 109.96, 116.01) 100%);
+  position: absolute;
+  border-radius: 100px;
+}
+
+.frame .rectangle-4 {
+  width: 150px;
+  height: 150px;
+  top: 473px;
+  left: 1200px;
+  background: linear-gradient(180deg, rgb(0, 47, 50) 0%, rgb(0, 109.96, 116.01) 100%);
+  position: absolute;
+  border-radius: 100px;
+}
+
+.frame .rectangle-5 {
+  width: 150px;
+  height: 150px;
+  top: 491px;
+  left: 1px;
+  background-color: #ffffff;
+  position: absolute;
+  border-radius: 100px;
+}
+
+.frame .rectangle-6 {
+  width: 150px;
+  height: 150px;
+  top: 0;
+  left: 444px;
+  background-color: #ffffff;
+  position: absolute;
+  border-radius: 100px;
+}
+
+.frame .rectangle-7 {
+  width: 50px;
+  height: 50px;
+  top: 759px;
+  left: 26px;
+  background-color: #ffffff;
+  position: absolute;
+  border-radius: 100px;
+}
+
+.frame .rectangle-8 {
+  width: 150px;
+  height: 150px;
+  top: 1195px;
+  left: 249px;
+  transform: rotate(-180deg);
+  background: linear-gradient(180deg, rgb(0, 47, 50) 0%, rgb(0, 109.96, 116.01) 100%);
+  position: absolute;
+  border-radius: 100px;
+}
+
+.frame .rectangle-9 {
+  width: 150px;
+  height: 150px;
+  top: 1093px;
+  left: 913px;
+  transform: rotate(-180deg);
+  background: linear-gradient(180deg, rgb(0, 47, 50) 0%, rgb(0, 109.96, 116.01) 100%);
+  position: absolute;
+  border-radius: 100px;
+}
+
+.frame .rectangle-10 {
+  width: 150px;
+  height: 150px;
+  top: 1196px;
+  left: 594px;
+  background-color: #ffffff;
+  transform: rotate(-180deg);
+  position: absolute;
+  border-radius: 100px;
+}
+
+.frame .rectangle-11 {
+  width: 150px;
+  height: 150px;
+  top: 784px;
+  left: 1200px;
+  background-color: #ffffff;
+  position: absolute;
+  border-radius: 100px;
+}
+
+.frame .rectangle-12 {
+  width: 50px;
+  height: 50px;
+  top: 141px;
+  left: 151px;
+  background: linear-gradient(180deg, rgb(0, 47, 50) 0%, rgb(0, 109.96, 116.01) 100%);
+  position: absolute;
+  border-radius: 100px;
+}
+
+.frame .rectangle-13 {
+  width: 50px;
+  height: 50px;
+  top: 448px;
+  left: 1122px;
+  background: linear-gradient(180deg, rgb(0, 47, 50) 0%, rgb(0, 109.96, 116.01) 100%);
+  position: absolute;
+  border-radius: 100px;
+}
+
+.frame .rectangle-14 {
+  width: 70px;
+  height: 70px;
+  top: 196px;
+  left: 214px;
+  background: linear-gradient(180deg, rgb(0, 47, 50) 0%, rgb(0, 109.96, 116.01) 100%);
+  position: absolute;
+  border-radius: 100px;
+}
+
+.frame .rectangle-15 {
+  width: 70px;
+  height: 70px;
+  top: 1060px;
+  left: 214px;
+  background: linear-gradient(180deg, rgb(0, 47, 50) 0%, rgb(0, 109.96, 116.01) 100%);
+  position: absolute;
+  border-radius: 100px;
+}
+
+.frame .rectangle-16 {
+  width: 50px;
+  height: 50px;
+  top: 1235px;
+  left: 1090px;
+  background: linear-gradient(180deg, rgb(0, 47, 50) 0%, rgb(0, 109.96, 116.01) 100%);
+  position: absolute;
+  border-radius: 100px;
+}
+
+.frame .rectangle-17 {
+  width: 50px;
+  height: 50px;
+  top: 1056px;
+  left: 860px;
+  background: linear-gradient(180deg, rgb(0, 47, 50) 0%, rgb(0, 109.96, 116.01) 100%);
+  position: absolute;
+  border-radius: 100px;
+}
+
+.frame .rectangle-18 {
+  width: 70px;
+  height: 70px;
+  top: 1079px;
+  left: 1112px;
+  background: linear-gradient(180deg, rgb(0, 47, 50) 0%, rgb(0, 109.96, 116.01) 100%);
+  position: absolute;
+  border-radius: 100px;
+}
+
+.frame .rectangle-19 {
+  width: 150px;
+  height: 150px;
+  top: 0;
+  left: 889px;
+  transform: rotate(-180deg);
+  background: linear-gradient(180deg, rgb(0, 47, 50) 0%, rgb(0, 109.96, 116.01) 100%);
+  position: absolute;
+  border-radius: 100px;
+}
+
+.frame .rectangle-20 {
+  width: 50px;
+  height: 50px;
+  top: 191px;
+  left: 981px;
+  background: linear-gradient(180deg, rgb(0, 47, 50) 0%, rgb(0, 109.96, 116.01) 100%);
+  position: absolute;
+  border-radius: 100px;
+}
+
+.frame .rectangle-21 {
+  width: 50px;
+  height: 50px;
+  top: 231px;
+  left: 839px;
+  background: linear-gradient(180deg, rgb(0, 47, 50) 0%, rgb(0, 109.96, 116.01) 100%);
+  position: absolute;
+  border-radius: 100px;
+}
+
+.frame .rectangle-22 {
+  width: 70px;
+  height: 70px;
+  top: 96px;
+  left: 804px;
+  background: linear-gradient(180deg, rgb(0, 47, 50) 0%, rgb(0, 109.96, 116.01) 100%);
+  position: absolute;
+  border-radius: 100px;
+}
+
+.frame .rectangle-23 {
+  width: 850px;
+  height: 750px;
+  top: 294px;
+  left: 235px;
+  border: 15px solid;
+  border-color: transparent;
+  border-image: linear-gradient(to left, rgb(0, 47, 50), rgb(0, 109.96, 116.01)) 1;
+  position: absolute;
+  border-radius: 100px;
+}
+
+.frame .rectangle-24 {
+  width: 70px;
+  height: 70px;
+  top: 679px;
+  left: 0;
+  background-color: #ffffff;
+  position: absolute;
+  border-radius: 100px;
+}
+
+.frame .rectangle-25 {
+  width: 50px;
+  height: 50px;
+  top: 10px;
+  left: 643px;
+  background-color: #ffffff;
+  transform: rotate(-32.45deg);
+  position: absolute;
+  border-radius: 100px;
+}
+
+.frame .rectangle-26 {
+  width: 50px;
+  height: 50px;
+  top: 750px;
+  left: 1352px;
+  background-color: #ffffff;
+  transform: rotate(-32.45deg);
+  position: absolute;
+  border-radius: 100px;
+}
+
+.frame .rectangle-27 {
+  width: 70px;
+  height: 70px;
+  top: 1317px;
+  left: 541px;
+  background-color: #ffffff;
+  transform: rotate(58.31deg);
+  position: absolute;
+  border-radius: 100px;
+}
+
+.frame .rectangle-28 {
+  width: 70px;
+  height: 70px;
+  top: 13px;
+  left: 531px;
+  background-color: #ffffff;
+  transform: rotate(-32.45deg);
+  position: absolute;
+  border-radius: 100px;
+}
+
+.frame .rectangle-29 {
+  width: 70px;
+  height: 70px;
+  top: 1055px;
+  left: 1387px;
+  background-color: #ffffff;
+  transform: rotate(-32.45deg);
+  position: absolute;
+  border-radius: 100px;
+}
+
+.frame .rectangle-30 {
+  width: 50px;
+  height: 50px;
+  top: 1463px;
+  left: 761px;
+  background-color: #ffffff;
+  transform: rotate(58.31deg);
+  position: absolute;
+  border-radius: 100px;
+}

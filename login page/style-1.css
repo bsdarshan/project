@@ -1,0 +1,52 @@
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url('pr.jpg'); /* Replace with the correct path */
+    background-size: cover;
+    background-position: center;
+  }
+
+  form {
+    background-color: transparent; /* Set background color to transparent */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+  }
+  input {
+    width: 100%;
+    padding: 8px;
+    margin: 8px 0;
+    box-sizing: border-box;
+  }
+
+  button {
+    background-color: #4caf50;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+  }
+
+  button:hover {
+    background-color: #45a049;
+  }
+
+  .toggle-form {
+    text-align: center;
+    margin-top: 10px;
+  }
+
+  .toggle-form a {
+    text-decoration: none;
+    color: #4caf50;
+    font-weight: bold;
+  }
+</style>
